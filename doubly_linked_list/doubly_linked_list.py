@@ -18,7 +18,7 @@ class ListNode:
         current_next = self.next
         # print(current_next)
         self.next = ListNode(value, self, current_next)
-        myListDebug.append(self.prev)
+        # myListDebug.append(self.prev)
         if current_next:
             current_next.prev = self.next
 
@@ -29,7 +29,7 @@ class ListNode:
     def insert_before(self, value):
         current_prev = self.prev
         self.prev = ListNode(value, current_prev, self)
-        myListDebug.append(self.prev)
+        # myListDebug.append(self.prev)
         if current_prev:
             current_prev.next = self.prev
 
@@ -169,42 +169,42 @@ class DoublyLinkedList:
         return maxval
 
 
-myList = DoublyLinkedList()
+# myList = DoublyLinkedList()
 
 
-def test(node):
-    if node:
-        return node.value
+# def test(node):
+#     if node:
+#         return node.value
 
 
 # for i in range(2, 10):
 #     print('i ' + str(i))
 #     myList.add_to_tail(i)
 
-myList.add_to_head(13)
-myList.add_to_head(7)
-myList.add_to_head(4)
-myList.add_to_head(3)
+# myList.add_to_head(13)
+# myList.add_to_head(7)
+# myList.add_to_head(4)
+# myList.add_to_head(3)
 # myList.add_to_head(2)
 # myList.add_to_head(1)
 
-myList.move_to_front(myList.head)
+# myList.move_to_front(myList.head)
 # myList.add_to_tail(2)
 # myList.add_to_tail(35)
 # print('Length: ' + str(len(myList)))
 # myList.remove_from_tail()
 # print('Length: ' + str(len(myList)))
 
-currentn = myList.head
+# currentn = myList.head
 # print(myListDebug[1].next)
 # print(myList.tail.value)
 
-while currentn:
-    if currentn:
-        print(currentn.value)
-    else:
-        print(currentn)
-    currentn = currentn.next
+# while currentn:
+#     if currentn:
+#         print(currentn.value)
+#     else:
+#         print(currentn)
+#     currentn = currentn.next
 # listVals = [test(node) for node in myListDebug]
 # print(listVals)
 
@@ -213,7 +213,7 @@ while currentn:
 # print(myListDebug[10].value)
 
 
-listVals = [test(node) for node in myListDebug]
+# listVals = [test(node) for node in myListDebug]
 # print(listVals)
 # print(myListDebug[9].value)
 
